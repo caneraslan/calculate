@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: rgb(7, 21, 44);
+    }
+
+    td {
+      width: 70px;
+    }
+
+    td>button {
+      width: 100%;
+      height: 40px;
+      margin: 1px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      color: blanchedalmond;
+      background-color: brown;
+    }
+
+    #resultLabel {
+      padding-right: 7px;
+      width: 210px;
+      height: 40px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display:inline-flex;
+      background-color: rgb(51, 96, 5);
+      color: aliceblue
+    }
+
+    table#calculate {
+      margin-top: 0px;
+    }
+
+    #oldProcess,
+    #allRes {
+      font-size: 10px;
+      font-weight: bolder;
+      color: rgb(205, 68, 9);
+      display: inline-flex;
+      align-items: flex-start;
+      justify-content: left;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="result">
+    <tr>
+      <td><label id="resultLabel">0</label></td>
+      <td><button id="c" value="c" onclick="writeNumber('c')">C</button></td>
+    </tr>
+    <tr><td><label id="oldProcess" colspan="2">**</label></td></tr>
+    <tr><td><label id="allRes" colspan="2" value="0">**</label></td></tr>
+  </table>
+  <table id="calculate"></table>
+  <p><label id="isActive" value="false"></label></p>
+</body>
+
+<script type="text/javascript" src="./sample.js"> </script>
+
+</html>
